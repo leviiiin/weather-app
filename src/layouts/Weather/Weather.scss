@@ -1,0 +1,122 @@
+.weather {
+  &__container {
+    padding: 20px 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__temperature {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+
+    padding-top: 50px;
+    font-size: 140px;
+    line-height: 1;
+    @media (max-width: 425px) {
+      text-align: center;
+      font-size: 90px;
+    }
+
+    &-format {
+      font-size: 40px;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+
+    &__city {
+      font-size: 50px;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 30px;
+      }
+    }
+
+    &__country {
+      font-size: 24px;
+      margin-bottom: 3px;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 425px) {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 425px) {
+      justify-content: center;
+    }
+  }
+
+  &__date {
+    font-size: 36px;
+
+    &__container {
+      padding-top: 50px;
+      font-size: 24px;
+    }
+
+    &__dayAndTime {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__info {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+
+.line {
+  font-size: 18px;
+}
+
+.weather-cards__container {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: auto;
+
+  @media (max-width:950px) {
+    justify-content: start;
+  }
+}
+
+.weather-card {
+  width: 130px;
+  padding: 40px 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+}

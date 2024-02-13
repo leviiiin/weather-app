@@ -1,0 +1,25 @@
+.search {
+  &__form {
+    box-sizing: border-box;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    background: linear-gradient(
+      134.42deg,
+      rgba(255, 255, 255, 0.48) -1.944%,
+      rgba(255, 255, 255, 0.12) 98.031%
+    );
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  &__btn {
+    border-radius: 20px;
+    border: none;
+    color: gray;
+    height: 100%;
+    padding: 5px 20px;
+  }
+}
