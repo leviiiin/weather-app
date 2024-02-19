@@ -2,8 +2,12 @@ export function getDate() {
   var today = new Date();
   var suffixes = ["th", "st", "nd", "rd"];
   var day = today.getDate();
-  var suffix =
-    suffixes[(day - 1) % 10 == 3 && day != 13 ? 0 : (day - 1) % 10];
+  var suffix;
+  if (day >= 11 && day <= 13) {
+    suffix = "th";
+  } else {
+    suffix = suffixes[day % 10 <= 3 ? day % 10 : 0];
+  }
   var formattedDate =
     day +
     suffix +

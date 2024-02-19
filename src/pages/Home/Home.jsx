@@ -1,20 +1,12 @@
 import "./Home.scss";
 import { Container } from "../../components/index";
-import { Header, Weather } from "../../layouts/index";
-import { useState } from "react";
+import { Weather } from "../../modules/index";
 
-const Home = () => {
-  const [city, setCity] = useState("Odesa");
-
-  const handleSearch = (searchTerm) => {
-    setCity(searchTerm);
-  };
-  
+const Home = (props) => {
   return (
     <>
-      <Header onSearch={handleSearch} />
       <Container>
-        <Weather city={city} />
+        <Weather city={props.city} />
       </Container>
     </>
   );
